@@ -1,0 +1,102 @@
+<div class="container mt-3">
+  <!-- Main container for the BMI calculator -->
+  <div class="row">
+    <!-- Row for alignment -->
+    <div class="col-lg-4 offset-lg-4">
+      <!-- Column with offset for centering the content -->
+      <h2 class="display-4 text-center mb-4">BMI CALCULATOR</h2>
+      <!-- Heading for the BMI Calculator -->
+      
+      <!-- Gender selection row -->
+      <div class="row mb-3">
+        <!-- Column for Male option -->
+        <div class="col-lg-6">
+          <div
+            class="bg-light text-center card custom-card"
+            [ngClass]="{ 'text-muted': gender === 'female' }"
+            style="cursor: pointer"
+            (click)="setMale()"
+          >
+            <div class="card-body">
+              <i class="fas fa-mars fa-3x mb-2"></i>
+              <p class="h5 mb-0 custom-label">Male</p>
+            </div>
+          </div>
+        </div>
+        <!-- Column for Female option -->
+        <div class="col-lg-6">
+          <div
+            class="bg-light text-center card custom-card"
+            [ngClass]="{ 'text-muted': gender === 'male' }"
+            style="cursor: pointer"
+            (click)="setFemale()"
+          >
+            <div class="card-body">
+              <i class="fas fa-venus fa-3x mb-2"></i>
+              <p class="h5 mb-0 custom-label">Female</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Height input row -->
+      <div class="row mb-3">
+        <div class="col-lg-12">
+          <div class="card bg-light card custom-card">
+            <div class="card-body">
+              <p class="h6 mb-0 custom-label">Height</p>
+              <div class="display-4 mb-2">{{ height }}<span class="cm">cm</span></div>
+              <input
+                type="range"
+                (input)="changeHeight($event)"
+                [value]="height"
+                min="120"
+                max="220"
+                class="form-range"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Weight and Age input row -->
+      <div class="row mb-3">
+        <div class="col-lg-6">
+          <div class="bg-light card custom-card">
+            <div class="card-body">
+              <p class="h6 mb-0 custom-label">Weight</p>
+              <div class="display-4 mb-2">{{ weight }}<span class="cm">kg</span></div>
+              <div>
+                <i class="fas fa-plus plusMinus" (click)="weight = weight + 1"></i>
+                <i class="fas fa-minus plusMinus" (click)="weight = weight - 1"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-light card custom-card">
+            <div class="card-body">
+              <p class="h6 mb-0 custom-label">Age</p>
+              <div class="display-4 mb-2">{{ age }}<span class="cm">years</span></div>
+              <div>
+                <i class="fas fa-plus plusMinus" (click)="age = age + 1"></i>
+                <i class="fas fa-minus plusMinus" (click)="age = age - 1"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Button for BMI calculation -->
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <button (click)="calculateBMI()" class="btn btn-primary btn-lg btn-color">
+            Calculate
+          </button>
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+</div>

@@ -1,0 +1,111 @@
+
+
+/* General styling for the container */
+.container {
+  background-color: #f8d7da; /* Soft pink */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(232, 62, 140, 0.5); /* Pink shadow */
+}
+
+/* Remove borders and add a subtle hover effect to cards */
+.card-body {
+  background-color: #ffffff;
+  transition: background-color 1.3s;
+  border-radius: 8px;
+}
+
+.card-body:hover {
+  background-color: #f5f5f5; /* Lighter gray on hover */
+}
+
+/* Custom card styling */
+.custom-card {
+  background-color: #e0e0e0; /* Light gray background for card elements */
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.custom-card:hover {
+  background-color: #d2d2d2; /* Slightly lighter background on hover */
+}
+
+.custom-label {
+  color: #333; /* Text color */
+}
+
+.custom-card input[type="range"] {
+  /* Specific styles for range input inside custom-card */
+  background: #ff99b0; /* Pink background */
+  box-shadow: 0 0 10px rgba(232, 62, 140, 0.5); /* Pink shadow */
+}
+
+.custom-card input[type="range"]::-webkit-slider-thumb {
+  /* Styles for the thumb of the slider */
+  background: #e83e8c; /* Stronger pink for the thumb */
+  border: 1px solid #e83e8c; /* Thumb border */
+}
+
+.custom-card input[type="range"]:active::-webkit-slider-thumb {
+  /* Styles for the thumb when clicked */
+  background: #d92574; /* Darker pink when clicked */
+}
+
+/* Reduce opacity for inactive gender */
+.inactiveGender {
+  opacity: 0.8;
+}
+
+/* Small font size for additional information */
+.cm {
+  font-size: 0.8rem;
+}
+
+/* Styling for buttons with primary color and hover effect */
+.plusMinus,
+.btn-color {
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 0 5px;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+  box-shadow: 0 0 10px rgba(232, 62, 140, 0.5); /* Pink shadow */
+}
+
+.plusMinus {
+  background-color: #e83e8c; /* Strong pink */
+}
+
+.plusMinus:hover {
+  background-color: #d92574; /* Darker pink on hover */
+}
+
+.btn-color {
+  background-color: #ff5c8d; /* Lighter pink */
+  border-color: #ff5c8d;
+  margin-bottom: 2%;
+}
+
+.btn-color:hover {
+  background-color: #e54b7b; /* Darker pink on hover */
+}
+
+/* Full width for range input on smaller screens */
+.form-range {
+  width: 100%;
+}
+
+/* Adjust padding for smaller screens */
+@media (max-width: 576px) {
+  .container {
+    padding: 15px;
+  }
+
+  /* Add margin-bottom to cards on smaller screens */
+  .card {
+    margin-bottom: 15px;
+  }
+}

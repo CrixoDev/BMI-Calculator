@@ -1,0 +1,35 @@
+<div class="row">
+  <!-- Result container column -->
+  <div class="col-lg-4 offset-lg-4 result-container">
+    <!-- Heading for the result section -->
+    <h2 class="title">RESULT</h2>
+    
+    <!-- Row for the result content -->
+    <div class="row">
+      <div class="col-lg-12">
+        <!-- Background item for styling -->
+        <div class="backgroundItem">
+          <!-- Container for the actual result content -->
+          <div class="result-content">
+            <!-- Result value -->
+            <p class="result">{{ result }}</p>
+            <!-- BMI value -->
+            <p class="bmi">{{ bmi }}</p>
+            <!-- Interpretation text -->
+            <p class="interpretation">{{ interpretation }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Row for the recalculate button -->
+    <div class="row">
+      <div class="col-lg-12">
+        <!-- Recalculate button with a specific style -->
+        <button routerLink="/" class="btn btn-primary btn-lg btn-color-result">
+          RE-CALCULATE
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

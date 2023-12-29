@@ -1,0 +1,35 @@
+/* General styling for the result container */
+.result-container {
+    background-color: #f8d7da; /* Soft pink */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(232, 62, 140, 0.5); /* Pink shadow */
+    padding: 20px; /* Add padding for better spacing */
+    margin-top: 20px; /* Add margin for spacing from the above content */
+  }
+  
+  /* Styling for the result title */
+  .title {
+    color: #e83e8c; /* Strong pink */
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  /* Styling for the result content */
+  .result-content {
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px; /* Add padding for better spacing */
+  }
+  
+  /* Styling for the result button */
+  .btn-color-result {
+    background-color: #ff5c8d; /* Lighter pink */
+    border-color: #ff5c8d;
+    display: block;
+    margin: 20px auto; /* Center the button */
+  }
+  
+  .btn-color-result:hover {
+    background-color: #e54b7b; /* Darker pink on hover */
+  }
+  
