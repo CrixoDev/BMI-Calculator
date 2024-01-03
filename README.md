@@ -21,7 +21,7 @@ This project was generated with Angular CLI version 17.0.8.
 2. 📂 Navigate to the project directory:
 
    ```bash
-   cd employee-management
+   cd bmi_calculator
 
    ```
 
